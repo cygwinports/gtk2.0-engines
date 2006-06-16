@@ -1,0 +1,6 @@
+category: Gnome
+requires: cygwin gtk2-x11
+sdesc: "Ten theme engines for GTK+-2.6"
+ldesc: "gtk-engines provides a central location for commonly used GTK+
+engines. It currently supplies ten engines and default themes for those
+which have one."
