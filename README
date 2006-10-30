@@ -42,18 +42,18 @@ without sacrificing too much in terms of speed or theme footprint size.
 
 Runtime requirements:
   cygwin-1.5.21-2
-  gtk2-x11-2.8.20-1
+  gtk2-x11-2.10.6-1
 
 Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.21-2
-  autoconf2.5-2.59-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20060709-1
-  cygport-0.2.5-1
+  binutils-20060817-1
+  cygport-0.2.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
+  libtool1.5-1.5.23a-1
   make-3.81-1
   pkg-config-0.20-1
   sed-4.1.5-1
@@ -81,114 +81,35 @@ This will create:
 
 Files included in the binary package:
 
-  /usr/lib/gtk-2.0/2.4.0/engines/cygclearlooks.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cygcrux-engine.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cyghcengine.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cygindustrial.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cyglighthouseblue.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cygmetal.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cygmist.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cygredmond95.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cygsmooth.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/cygthinice.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/libclearlooks.la
-  /usr/lib/gtk-2.0/2.4.0/engines/libcrux-engine.la
-  /usr/lib/gtk-2.0/2.4.0/engines/libhcengine.la
-  /usr/lib/gtk-2.0/2.4.0/engines/libindustrial.la
-  /usr/lib/gtk-2.0/2.4.0/engines/liblighthouseblue.la
-  /usr/lib/gtk-2.0/2.4.0/engines/libmetal.la
-  /usr/lib/gtk-2.0/2.4.0/engines/libmist.la
-  /usr/lib/gtk-2.0/2.4.0/engines/libredmond95.la
-  /usr/lib/gtk-2.0/2.4.0/engines/libsmooth.la
-  /usr/lib/gtk-2.0/2.4.0/engines/libthinice.la
+  /usr/lib/gtk-2.0/2.10.0/engines/cygclearlooks.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cygcrux-engine.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cygglide.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cyghcengine.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cygindustrial.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cygmist.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cygredmond95.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cygsmooth.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cygthinice.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/libclearlooks.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libcrux-engine.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libglide.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libhcengine.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libindustrial.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libmist.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libredmond95.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libsmooth.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libthinice.la
   /usr/lib/pkgconfig/gtk-engines-2.pc
-  /usr/share/doc/Cygwin/gtk2-x11-engines-2.6.11.README
-  /usr/share/doc/gtk2-x11-engines-2.6.11/AUTHORS
-  /usr/share/doc/gtk2-x11-engines-2.6.11/COPYING
-  /usr/share/doc/gtk2-x11-engines-2.6.11/ChangeLog
-  /usr/share/doc/gtk2-x11-engines-2.6.11/INSTALL
-  /usr/share/doc/gtk2-x11-engines-2.6.11/NEWS
-  /usr/share/doc/gtk2-x11-engines-2.6.11/README
+  /usr/share/doc/Cygwin/gtk2-x11-engines-2.8.1.README
+  /usr/share/doc/gtk2-x11-engines-2.8.1/AUTHORS
+  /usr/share/doc/gtk2-x11-engines-2.8.1/COPYING
+  /usr/share/doc/gtk2-x11-engines-2.8.1/ChangeLog
+  /usr/share/doc/gtk2-x11-engines-2.8.1/INSTALL
+  /usr/share/doc/gtk2-x11-engines-2.8.1/NEWS
+  /usr/share/doc/gtk2-x11-engines-2.8.1/README
   /usr/share/themes/Clearlooks/gtk-2.0/gtkrc
   /usr/share/themes/Crux/gtk-2.0/gtkrc
-  /usr/share/themes/Crux/pixmaps/arrow_down-spinner.png
-  /usr/share/themes/Crux/pixmaps/arrow_down.png
-  /usr/share/themes/Crux/pixmaps/arrow_left.png
-  /usr/share/themes/Crux/pixmaps/arrow_right.png
-  /usr/share/themes/Crux/pixmaps/arrow_up-spinner.png
-  /usr/share/themes/Crux/pixmaps/arrow_up.png
-  /usr/share/themes/Crux/pixmaps/check-active-default-focus.png
-  /usr/share/themes/Crux/pixmaps/check-active-default.png
-  /usr/share/themes/Crux/pixmaps/check-active-hilight-focus.png
-  /usr/share/themes/Crux/pixmaps/check-active-hilight.png
-  /usr/share/themes/Crux/pixmaps/check-active-insensitive.png
-  /usr/share/themes/Crux/pixmaps/check-active-pressed-focus.png
-  /usr/share/themes/Crux/pixmaps/check-active-pressed.png
-  /usr/share/themes/Crux/pixmaps/check-default-focus.png
-  /usr/share/themes/Crux/pixmaps/check-default.png
-  /usr/share/themes/Crux/pixmaps/check-hilight-focus.png
-  /usr/share/themes/Crux/pixmaps/check-hilight.png
-  /usr/share/themes/Crux/pixmaps/check-insensitive.png
-  /usr/share/themes/Crux/pixmaps/check-pressed-focus.png
-  /usr/share/themes/Crux/pixmaps/check-pressed.png
-  /usr/share/themes/Crux/pixmaps/progressbar-left.png
-  /usr/share/themes/Crux/pixmaps/progressbar-right.png
-  /usr/share/themes/Crux/pixmaps/progressbar.png
-  /usr/share/themes/Crux/pixmaps/progressbar_trough.png
-  /usr/share/themes/Crux/pixmaps/radio-active-default-focus.png
-  /usr/share/themes/Crux/pixmaps/radio-active-default.png
-  /usr/share/themes/Crux/pixmaps/radio-active-hilight-focus.png
-  /usr/share/themes/Crux/pixmaps/radio-active-hilight.png
-  /usr/share/themes/Crux/pixmaps/radio-active-insensitive.png
-  /usr/share/themes/Crux/pixmaps/radio-active-pressed-focus.png
-  /usr/share/themes/Crux/pixmaps/radio-active-pressed.png
-  /usr/share/themes/Crux/pixmaps/radio-default-focus.png
-  /usr/share/themes/Crux/pixmaps/radio-default.png
-  /usr/share/themes/Crux/pixmaps/radio-hilight-focus.png
-  /usr/share/themes/Crux/pixmaps/radio-hilight.png
-  /usr/share/themes/Crux/pixmaps/radio-insensitive.png
-  /usr/share/themes/Crux/pixmaps/radio-pressed-focus.png
-  /usr/share/themes/Crux/pixmaps/radio-pressed.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-down-hilight.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-down-pressed.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-down.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-left-hilight.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-left-pressed.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-left.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-right-hilight.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-right-pressed.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-right.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-up-hilight.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-up-pressed.png
-  /usr/share/themes/Crux/pixmaps/scroller-arrow-up.png
-  /usr/share/themes/Crux/pixmaps/scroller-h-hilight.png
-  /usr/share/themes/Crux/pixmaps/scroller-h-thumb-hilight.png
-  /usr/share/themes/Crux/pixmaps/scroller-h-thumb.png
-  /usr/share/themes/Crux/pixmaps/scroller-h-trough.png
-  /usr/share/themes/Crux/pixmaps/scroller-h.png
-  /usr/share/themes/Crux/pixmaps/scroller-v-hilight.png
-  /usr/share/themes/Crux/pixmaps/scroller-v-thumb-hilight.png
-  /usr/share/themes/Crux/pixmaps/scroller-v-thumb.png
-  /usr/share/themes/Crux/pixmaps/scroller-v-trough.png
-  /usr/share/themes/Crux/pixmaps/scroller-v.png
-  /usr/share/themes/Crux/pixmaps/slider_h_thumb.png
-  /usr/share/themes/Crux/pixmaps/slider_h_trough.png
-  /usr/share/themes/Crux/pixmaps/slider_h_trough_focus.png
-  /usr/share/themes/Crux/pixmaps/slider_v_thumb.png
-  /usr/share/themes/Crux/pixmaps/slider_v_trough.png
-  /usr/share/themes/Crux/pixmaps/slider_v_trough_focus.png
-  /usr/share/themes/Crux/pixmaps/tab_left-unsel.png
-  /usr/share/themes/Crux/pixmaps/tab_left.png
-  /usr/share/themes/Crux/pixmaps/tab_right.png
-  /usr/share/themes/Crux/pixmaps/tab_sel-bottom.png
-  /usr/share/themes/Crux/pixmaps/tab_sel.png
-  /usr/share/themes/Crux/pixmaps/tab_usel-bottom-left.png
-  /usr/share/themes/Crux/pixmaps/tab_usel-bottom.png
-  /usr/share/themes/Crux/pixmaps/tab_usel-left.png
-  /usr/share/themes/Crux/pixmaps/tab_usel.png
   /usr/share/themes/Industrial/gtk-2.0/gtkrc
-  /usr/share/themes/LighthouseBlue/gtk-2.0/gtkrc
-  /usr/share/themes/Metal/gtk-2.0/gtkrc
   /usr/share/themes/Mist/gtk-2.0/gtkrc
   /usr/share/themes/Redmond/gtk-2.0/gtkrc
   /usr/share/themes/Redmond/gtk/gtkrc
@@ -197,6 +118,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.8.1-1 -----
+Version bump for GTK+ 2.10.
 
 ----- version 2.6.11-1 -----
 Version bump.
