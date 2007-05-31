@@ -41,22 +41,24 @@ without sacrificing too much in terms of speed or theme footprint size.
 10) Clearlooks - The new default theme for GNOME 2.12.
 
 Runtime requirements:
-  cygwin-1.5.22-1
-  gtk2-x11-2.10.6-1
+  cygwin-1.5.24-2
+  glib2-2.12.12-1
+  gtk2-x11-2.10.12-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.6-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.23a-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  intltool-0.35.5-1
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.gnome.org/
@@ -67,15 +69,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-engines-2.8.2-X-src.tar.bz2
+  unpack gtk2-x11-engines-2.10.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-engines-2.8.2-X.cygport all
+  cygport ./gtk2-x11-engines-2.10.2-X.cygport all
 
 This will create:
-  /usr/src/gtk2-x11-engines-2.8.2-X-src.tar.bz2
-  /usr/src/gtk2-x11-engines-2.8.2-X.tar.bz2
+  /usr/src/gtk2-x11-engines-2.10.2-X-src.tar.bz2
+  /usr/src/gtk2-x11-engines-2.10.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -100,13 +102,46 @@ Files included in the binary package:
   /usr/lib/gtk-2.0/2.10.0/engines/libsmooth.la
   /usr/lib/gtk-2.0/2.10.0/engines/libthinice.la
   /usr/lib/pkgconfig/gtk-engines-2.pc
-  /usr/share/doc/Cygwin/gtk2-x11-engines-2.8.2.README
-  /usr/share/doc/gtk2-x11-engines-2.8.2/AUTHORS
-  /usr/share/doc/gtk2-x11-engines-2.8.2/COPYING
-  /usr/share/doc/gtk2-x11-engines-2.8.2/ChangeLog
-  /usr/share/doc/gtk2-x11-engines-2.8.2/INSTALL
-  /usr/share/doc/gtk2-x11-engines-2.8.2/NEWS
-  /usr/share/doc/gtk2-x11-engines-2.8.2/README
+  /usr/share/doc/Cygwin/gtk2-x11-engines-2.10.2.README
+  /usr/share/doc/gtk2-x11-engines-2.10.2/AUTHORS
+  /usr/share/doc/gtk2-x11-engines-2.10.2/COPYING
+  /usr/share/doc/gtk2-x11-engines-2.10.2/ChangeLog
+  /usr/share/doc/gtk2-x11-engines-2.10.2/INSTALL
+  /usr/share/doc/gtk2-x11-engines-2.10.2/NEWS
+  /usr/share/doc/gtk2-x11-engines-2.10.2/README
+  /usr/share/gtk-engines/clearlooks.xml
+  /usr/share/gtk-engines/crux.xml
+  /usr/share/gtk-engines/glide.xml
+  /usr/share/gtk-engines/hc.xml
+  /usr/share/gtk-engines/industrial.xml
+  /usr/share/gtk-engines/mist.xml
+  /usr/share/gtk-engines/redmond.xml
+  /usr/share/gtk-engines/smooth.xml
+  /usr/share/gtk-engines/thinice.xml
+  /usr/share/locale/ar/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/bg/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/ca/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/da/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/de/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/dz/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/es/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/et/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/fr/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/gl/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/gu/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/hu/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/ko/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/lt/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/mk/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/nl/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/oc/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/or/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/pa/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/pt/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/sv/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/uk/LC_MESSAGES/gtk-engines.mo
   /usr/share/themes/Clearlooks/gtk-2.0/gtkrc
   /usr/share/themes/Crux/gtk-2.0/gtkrc
   /usr/share/themes/Industrial/gtk-2.0/gtkrc
@@ -118,6 +153,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.10.2-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 2.8.2-1 -----
 Version bump.
