@@ -1,60 +1,27 @@
 gtk2-x11-engines
 -------------------------------------------
-gtk-engines provides a central location for commonly used GTK+ engines.
-
-It currently supplies several engines and default themes for those which
+gtk-engines provides a central location for commonly used GTK+ engines. 
+It currently supplies several engines and default themes for those which 
 have one.
-
-1) Crux - The engine created for the once popular theme by Eazel, Inc.
-Unfortunately long without maintainence it is no longer as popular or
-considered as useable as it once was.
-
-2) HC - The High Contrast engine is primarily targeted at Usability
-Themes, such as the GNOME a11y themes HighContrast HighContrastLarge
-etc.
-
-3) Industrial - developed by Ximian, Inc. as the default apearance for
-its Desktop. Industrial is a highly popular look which provides a
-simple, consistant, and highly cohesive appearance for applications.
-
-4) LighthouseBlue - Developed by Jan Rosczak out of critques by Eugenia
-Loli-Queru over the BlueCurve theme Copyright RedHat Inc. LightHouseBlue
-Engine and theme experiments with certain concepts of usability such as
-Bold fonts on current notebook tabs. etc.
-
-5) Metal - An engine and theme designed to mimic the Java Swing Metal
-appearance
-
-6) Mist - A minimalist engine designed to provide simple UI experience.
-
-7) Redmond - An engine and theme designed to mimic the appearance of
-another OS
-
-8) Thinice - A once highly popular engine with thin edges and theme of
-Icy Colors, providing a simple mostly clean appearance many find
-satisfying.
-
-9) Smooth - An engine currently gaining in popularity for its ability to
-configure common theme elements with a high degree of flexibility,
-without sacrificing too much in terms of speed or theme footprint size.
-
-10) Clearlooks - The new default theme for GNOME 2.12.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  glib2-2.12.12-1
-  gtk2-x11-2.10.12-1
+  gdk-pixbuf2-2.12.2-1
+  glib2-2.14.4-1
+  gtk2-x11-2.12.2-1
+  libcairo2-1.4.12-1
+  pango-1.18.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
+  automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  intltool-0.35.5-1
+  intltool-0.36.2-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -69,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2-x11-engines-2.10.2-X-src.tar.bz2
+  unpack gtk2-x11-engines-2.12.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2-x11-engines-2.10.2-X.cygport all
+  cygport ./gtk2-x11-engines-2.12.2-X.cygport all
 
 This will create:
-  /usr/src/gtk2-x11-engines-2.10.2-X-src.tar.bz2
-  /usr/src/gtk2-x11-engines-2.10.2-X.tar.bz2
+  /usr/src/gtk2-x11-engines-2.12.2-X-src.tar.bz2
+  /usr/src/gtk2-x11-engines-2.12.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -88,6 +55,7 @@ Files included in the binary package:
   /usr/lib/gtk-2.0/2.10.0/engines/cygglide.dll
   /usr/lib/gtk-2.0/2.10.0/engines/cyghcengine.dll
   /usr/lib/gtk-2.0/2.10.0/engines/cygindustrial.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/cygluaengine.dll
   /usr/lib/gtk-2.0/2.10.0/engines/cygmist.dll
   /usr/lib/gtk-2.0/2.10.0/engines/cygredmond95.dll
   /usr/lib/gtk-2.0/2.10.0/engines/cygsmooth.dll
@@ -97,62 +65,81 @@ Files included in the binary package:
   /usr/lib/gtk-2.0/2.10.0/engines/libglide.la
   /usr/lib/gtk-2.0/2.10.0/engines/libhcengine.la
   /usr/lib/gtk-2.0/2.10.0/engines/libindustrial.la
+  /usr/lib/gtk-2.0/2.10.0/engines/libluaengine.la
   /usr/lib/gtk-2.0/2.10.0/engines/libmist.la
   /usr/lib/gtk-2.0/2.10.0/engines/libredmond95.la
   /usr/lib/gtk-2.0/2.10.0/engines/libsmooth.la
   /usr/lib/gtk-2.0/2.10.0/engines/libthinice.la
   /usr/lib/pkgconfig/gtk-engines-2.pc
-  /usr/share/doc/Cygwin/gtk2-x11-engines-2.10.2.README
-  /usr/share/doc/gtk2-x11-engines-2.10.2/AUTHORS
-  /usr/share/doc/gtk2-x11-engines-2.10.2/COPYING
-  /usr/share/doc/gtk2-x11-engines-2.10.2/ChangeLog
-  /usr/share/doc/gtk2-x11-engines-2.10.2/INSTALL
-  /usr/share/doc/gtk2-x11-engines-2.10.2/NEWS
-  /usr/share/doc/gtk2-x11-engines-2.10.2/README
+  /usr/share/doc/Cygwin/gtk2-x11-engines-2.12.2.README
+  /usr/share/doc/gtk2-x11-engines-2.12.2/AUTHORS
+  /usr/share/doc/gtk2-x11-engines-2.12.2/COPYING
+  /usr/share/doc/gtk2-x11-engines-2.12.2/ChangeLog
+  /usr/share/doc/gtk2-x11-engines-2.12.2/INSTALL
+  /usr/share/doc/gtk2-x11-engines-2.12.2/NEWS
+  /usr/share/doc/gtk2-x11-engines-2.12.2/README
   /usr/share/gtk-engines/clearlooks.xml
-  /usr/share/gtk-engines/crux.xml
+  /usr/share/gtk-engines/crux-engine.xml
   /usr/share/gtk-engines/glide.xml
-  /usr/share/gtk-engines/hc.xml
+  /usr/share/gtk-engines/hcengine.xml
   /usr/share/gtk-engines/industrial.xml
   /usr/share/gtk-engines/mist.xml
-  /usr/share/gtk-engines/redmond.xml
+  /usr/share/gtk-engines/redmond95.xml
   /usr/share/gtk-engines/smooth.xml
   /usr/share/gtk-engines/thinice.xml
   /usr/share/locale/ar/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/bg/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/ca/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/da/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/de/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/dz/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/el/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/en_GB/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/es/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/et/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/fi/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/fr/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/gl/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/gu/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/hu/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/it/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/ja/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/ko/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/lt/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/mk/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/nb/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/nl/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/oc/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/or/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/pa/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/pl/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/pt/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/ru/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/si/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/sq/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/sr/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/sv/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/ta/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/th/LC_MESSAGES/gtk-engines.mo
   /usr/share/locale/uk/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/vi/LC_MESSAGES/gtk-engines.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gtk-engines.mo
   /usr/share/themes/Clearlooks/gtk-2.0/gtkrc
   /usr/share/themes/Crux/gtk-2.0/gtkrc
   /usr/share/themes/Industrial/gtk-2.0/gtkrc
   /usr/share/themes/Mist/gtk-2.0/gtkrc
   /usr/share/themes/Redmond/gtk-2.0/gtkrc
-  /usr/share/themes/Redmond/gtk/gtkrc
   /usr/share/themes/ThinIce/gtk-2.0/gtkrc
 
 --------------------
 
 Port Notes:
+
+----- version 2.12.2-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 2.10.2-1 -----
 Version bump for GNOME 2.18.

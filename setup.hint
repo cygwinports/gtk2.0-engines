@@ -1,6 +1,6 @@
 category: Gnome
-requires: cygwin glib2 gtk2-x11
-sdesc: "Ten theme engines for GTK+-2.6"
+requires: cygwin glib2 gdk-pixbuf2 gtk2-x11 libcairo2 pango
+sdesc: "Ten theme engines for gtk+-2.x"
 ldesc: "gtk-engines provides a central location for commonly used GTK+
 engines. It currently supplies ten engines and default themes for those
 which have one."
