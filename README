@@ -37,15 +37,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtk2.0-engines-2.18.3-X-src.tar.bz2
+  unpack gtk2.0-engines-2.18.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtk2.0-engines-2.18.3-X.cygport all
+  cygport ./gtk2.0-engines-2.18.4-X.cygport all
 
 This will create:
-  /usr/src/gtk2.0-engines-2.18.3-X-src.tar.bz2
-  /usr/src/gtk2.0-engines-2.18.3-X.tar.bz2
+  /usr/src/gtk2.0-engines-2.18.4-X-src.tar.bz2
+  /usr/src/gtk2.0-engines-2.18.4-X.tar.bz2
 
 For a list of files in the binary package, from the command line
 run: 'cygcheck -l gtk2.0-engines'.
@@ -54,8 +54,8 @@ run: 'cygcheck -l gtk2.0-engines'.
 
 Port Notes:
 
------ version 2.18.3-1 -----
-Version bump for GNOME 2.28.
+----- version 2.18.4-1 -----
+Version bump.
 
 ----- version 2.18.2-1 -----
 Version bump.

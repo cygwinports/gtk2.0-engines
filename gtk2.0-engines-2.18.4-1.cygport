@@ -1,7 +1,4 @@
 ORIG_PN=gtk-engines
 inherit gnome2
 
-PATCH_URI="2.18.3-dist-liblua.patch
-           2.18.3-system-lua.patch"
-
 CYGCONF_ARGS="--enable-lua --with-system-lua"
