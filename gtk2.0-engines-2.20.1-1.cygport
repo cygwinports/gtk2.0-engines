@@ -1,4 +1,0 @@
-ORIG_PN=gtk-engines
-inherit gnome2
-
-CYGCONF_ARGS="--enable-lua --with-system-lua"
