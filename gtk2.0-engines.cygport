@@ -9,3 +9,16 @@ SUMMARY="Standard theme engines for gtk+-2.x"
 DESCRIPTION="gtk-engines provides a central location for commonly used GTK+
 engines. It currently supplies ten engines and default themes for those
 which have one."
+
+PKG_NAMES="${NAME} ${NAME}-devel"
+gtk2_0_engines_CONTENTS="
+	usr/lib/gtk-2.0/2.10.0/engines/
+	usr/share/doc/${NAME}
+	usr/share/gtk-engines/
+	usr/share/locale/*/LC_MESSAGES/gtk-engines.mo
+	usr/share/themes/*
+"
+gtk2_0_engines_devel_REQUIRES=${NAME}
+gtk2_0_engines_devel_CONTENTS="
+	usr/lib/pkgconfig/gtk-engines-2.pc
+"
